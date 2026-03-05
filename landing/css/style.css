@@ -256,6 +256,7 @@ font-family: "Raleway", sans-serif; */
 
  .work {
      position: relative;
+     margin-bottom: 110px;
 
      .work__header {
          padding: 0px 115px;
@@ -352,5 +353,269 @@ font-family: "Raleway", sans-serif; */
          background: url(../img/decore-2.png) no-repeat top center / contain;
          mix-blend-mode: color-burn;
          z-index: -1;
+     }
+ }
+
+
+ .pricing {
+     .reviews {
+         display: flex;
+         justify-content: center;
+
+         .reviews__inner {
+             display: flex;
+             align-items: center;
+             gap: 13px;
+             padding: 23px;
+             border-radius: 22px;
+             background-color: #fff;
+             border: 1px solid #E4EAF8;
+             margin-bottom: 86px;
+
+             .reviews-images {
+                 display: flex;
+                 align-items: center;
+
+                 img {
+                     width: 37px;
+                     height: 37px;
+                     border-radius: 50%;
+                     border: 2px solid #fff;
+                     cursor: pointer;
+                 }
+
+                 img:nth-of-type(2) {
+                     transform: translateX(-10px);
+                 }
+
+                 img:nth-of-type(3) {
+                     transform: translateX(-20px);
+                 }
+
+                 img:nth-of-type(4) {
+                     transform: translateX(-30px);
+                 }
+
+                 img:nth-of-type(5) {
+                     transform: translateX(-40px);
+                 }
+             }
+
+             .reviews-rates {
+                 p {
+                     font-weight: 400;
+                     font-size: 16px;
+                     line-height: 120%;
+                     color: #8987A1;
+                     text-transform: capitalize;
+                     padding-bottom: 4px;
+
+                     span {
+                         font-weight: 600;
+                         color: #252432;
+                     }
+                 }
+
+                 ul {
+                     display: flex;
+                     gap: 6px;
+
+                     li {
+                         cursor: pointer;
+                         line-height: 0;
+
+                         img {
+                             width: 12px;
+                             height: 12px;
+
+                             &:hover {
+                                 transform: scale(1.2);
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+
+
+ }
+
+ .services {
+     display: flex;
+     gap: 32px;
+
+     .services__meeting {
+         flex-basis: 390px;
+         display: flex;
+         flex-direction: column;
+     }
+
+     .services__meeting-header {
+         margin-bottom: 81px;
+     }
+
+     .services__meeting-header h2 {
+         font-weight: 700;
+         font-size: 60px;
+         line-height: 120%;
+         color: #252432;
+         font-family: "Raleway", sans-serif;
+         padding-bottom: 16px;
+     }
+
+     .services__meeting-header p {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 150%;
+         color: #8987A1;
+     }
+
+     .services__meeting-footer {
+         padding: 37px 26px 26px 26px;
+         background-color: #fff;
+         border-radius: 20px;
+         margin-top: auto;
+     }
+
+     .services__meeting-footer p {
+         font-family: "Raleway", sans-serif;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 120%;
+         max-width: 240px;
+         padding-bottom: 30px;
+     }
+
+     .services__meeting-footer h3 {
+         font-family: "Raleway", sans-serif;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 120%;
+         padding-bottom: 40px;
+         max-width: 240px;
+     }
+
+     .services__meeting-footer button {
+         font-family: "Raleway", sans-serif;
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 150%;
+         color: #FFFFFF;
+         width: 100%;
+         padding: 18px 0;
+         background-color: #4E47FF;
+         border-radius: 10px;
+         cursor: pointer;
+
+         &:active {
+             transform: scale(98%);
+         }
+     }
+ }
+
+ .service__ulimited {
+     display: flex;
+     flex-direction: column;
+     background-color: #fff;
+     border-radius: 20px;
+     padding: 43px 22px 25px 22px;
+     flex-grow: 1;
+     gap: 40px;
+
+
+     .service__ulimited-header {
+         padding: 0px 28px;
+
+         h3 {
+             font-weight: 700;
+             font-size: 30px;
+             line-height: 120%;
+             font-family: "Raleway", sans-serif;
+             padding-bottom: 30px;
+         }
+
+         p {
+             font-family: "Inter", sans-serif;
+             font-weight: 400;
+             font-size: 14px;
+             line-height: 150%;
+             color: #8987A1;
+             padding-bottom: 40px;
+             max-width: 380px;
+         }
+     }
+
+     .service__ulimited-inner {
+         display: flex;
+         gap: 120px;
+
+         ul li {
+             display: flex;
+             align-items: center;
+             gap: 13px;
+
+             &:not(:last-child) {
+                 margin-bottom: 18px;
+             }
+         }
+
+         ul li span {
+             font-weight: 400;
+             font-size: 14px;
+             line-height: 180%;
+             color: #252432;
+         }
+
+         ul li img {
+             width: 18px;
+             height: 18px;
+         }
+     }
+
+
+     .service__ulimited-price {
+         margin-top: auto;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 28px 42px;
+         background-color: #F5F8FF;
+         border-radius: 10px;
+
+         div span:nth-of-type(1) {
+             font-weight: 700;
+             font-size: 60px;
+             line-height: 120%;
+             color: #252432;
+         }
+
+         div span:nth-of-type(2) {
+             font-weight: 400;
+             font-size: 20px;
+             line-height: 150%;
+             color: #8987A1;
+         }
+
+         .service__arrow {
+             width: 40px;
+             height: 40px;
+             border-radius: 50%;
+             background-color: #eef0f377;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             cursor: pointer;
+         }
+
+         .service__arrow:active {
+             background-color: #eef0f3;
+         }
+
+         .service__arrow img {
+             width: 14px;
+             height: 6px;
+             transform: rotate(180deg);
+         }
      }
  }
