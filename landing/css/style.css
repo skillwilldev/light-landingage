@@ -358,6 +358,8 @@ font-family: "Raleway", sans-serif; */
 
 
  .pricing {
+     margin-bottom: 170px;
+
      .reviews {
          display: flex;
          justify-content: center;
@@ -618,4 +620,84 @@ font-family: "Raleway", sans-serif; */
              transform: rotate(180deg);
          }
      }
+ }
+
+
+ .questions__inner {
+     display: flex;
+     gap: 32px
+ }
+
+ .questions__inner>h2 {
+     font-weight: 700;
+     font-size: 60px;
+     line-height: 120%;
+     color: #252432;
+     font-family: "Raleway", sans-serif;
+     max-width: 390px;
+ }
+
+ .accordion {
+     flex: 1 1 100%;
+
+     li {
+         background-color: #fff;
+         border-radius: 10px;
+
+         &:not(:last-child) {
+             margin-bottom: 16px;
+         }
+     }
+
+     details {
+         summary {
+             font-family: "Raleway", sans-serif;
+             font-weight: 700;
+             font-size: 18px;
+             line-height: 120%;
+             color: #252432;
+             padding: 24px 30px;
+         }
+
+         p {
+             font-weight: 400;
+             font-size: 16px;
+             line-height: 150%;
+             color: #8987A1;
+             padding: 0px 30px 24px;
+
+             span {
+                 font-weight: 700;
+                 color: #252432;
+             }
+         }
+     }
+ }
+
+ .accordion details summary {
+     list-style: none;
+     position: relative;
+     cursor: pointer;
+     display: block;
+
+ }
+
+ .accordion details summary::-webkit-details-marker {
+     display: none;
+ }
+
+ .accordion details summary::after {
+     content: '';
+     background: url(../img/plus.svg) no-repeat left center / contain;
+     position: absolute;
+     right: 30px;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 20px;
+     height: 20px;
+     transition: transform .3s ease-in;
+ }
+
+ .accordion details[open] summary::after {
+     transform: translateY(-50%) rotate(45deg);
  }
