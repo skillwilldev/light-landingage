@@ -13,7 +13,6 @@ font-family: "Raleway", sans-serif; */
  .container {
      max-width: 1440px;
      margin: 0 auto;
-     /* padding: 0 10px; */
  }
 
  header {
@@ -358,7 +357,7 @@ font-family: "Raleway", sans-serif; */
 
 
  .pricing {
-     margin-bottom: 170px;
+     /* margin-bottom: 170px; */
 
      .reviews {
          display: flex;
@@ -610,9 +609,14 @@ font-family: "Raleway", sans-serif; */
              cursor: pointer;
          }
 
+         .service__arrow:hover {
+             background-color: #e7e9eb;
+         }
+
          .service__arrow:active {
              background-color: #eef0f3;
          }
+
 
          .service__arrow img {
              width: 14px;
@@ -623,9 +627,27 @@ font-family: "Raleway", sans-serif; */
  }
 
 
+ .questions {
+    padding-top: 170px;
+ }
+
  .questions__inner {
      display: flex;
-     gap: 32px
+     gap: 32px;
+     overflow-x: clip;
+     position: relative;
+
+     &::before {
+         content: '';
+         background: url(../img/decore-3.png) no-repeat left top / contain;
+         position: absolute;
+         top: 140px;
+         left: -14%;
+         transform: translateY(-50%);
+         mix-blend-mode: color-burn;
+         width: 730px;
+         height: 569px;
+     }
  }
 
  .questions__inner>h2 {
@@ -673,6 +695,7 @@ font-family: "Raleway", sans-serif; */
          }
      }
  }
+
 
  .accordion details summary {
      list-style: none;
