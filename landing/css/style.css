@@ -628,7 +628,10 @@ font-family: "Raleway", sans-serif; */
 
 
  .questions {
-    padding-top: 170px;
+     padding-top: 170px;
+     padding-bottom: 111px;
+     margin-bottom: 124px;
+     border-bottom: 1px solid #D6DDED;
  }
 
  .questions__inner {
@@ -723,4 +726,210 @@ font-family: "Raleway", sans-serif; */
 
  .accordion details[open] summary::after {
      transform: translateY(-50%) rotate(45deg);
+ }
+
+ .touch {
+     margin-bottom: 155px;
+
+     .touch__inner {
+         position: relative;
+     }
+
+     .touch__inner::after {
+         content: '';
+         position: absolute;
+         top: -13%;
+         right: 0%;
+         background: url(../img/decore-4.png) no-repeat center / contain;
+         width: 230px;
+         height: 230px;
+         mix-blend-mode: color-burn;
+     }
+ }
+
+ .touch h2 {
+     font-weight: 700;
+     font-size: 60px;
+     line-height: 120%;
+     font-family: "Raleway", sans-serif;
+     color: #252432;
+     text-align: center;
+     padding-bottom: 70px;
+ }
+
+ .touch__form {
+     display: flex;
+     justify-content: center;
+ }
+
+ form {
+     max-width: 700px;
+     width: 100%;
+
+     input {
+         border: 1px solid #D6DDED;
+         border-radius: 10px;
+         padding: 20px 32px;
+         width: 100%;
+         margin-bottom: 16px;
+         color: #252432;
+
+         &::placeholder {
+             font-weight: 400;
+             font-size: 20px;
+             line-height: 150%;
+             color: #8987A1;
+         }
+     }
+
+     label {
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 120%;
+         color: #252432;
+         display: block;
+         padding-bottom: 10px;
+     }
+
+     textarea {
+         width: 100%;
+         min-height: 150px;
+         max-height: 400px;
+         border: 1px solid #D6DDED;
+         border-radius: 10px;
+         resize: vertical;
+         color: #252432;
+         padding: 20px 32px;
+         margin-bottom: 25px;
+
+         &::placeholder {
+             font-weight: 400;
+             font-size: 20px;
+             line-height: 150%;
+             color: #8987A1;
+         }
+     }
+
+     button[type="submit"] {
+         font-family: "Raleway", sans-serif;
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 150%;
+         color: #FFFFFF;
+         background-color: #4E47FF;
+         border-radius: 10px;
+         width: 100%;
+         padding: 19px 0;
+         cursor: pointer;
+
+         &:active {
+             transform: scale(98%);
+         }
+     }
+ }
+
+ footer {
+     padding: 0 112px;
+     padding-bottom: 100px;
+ }
+
+ .footer__inner {
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+     padding: 84px 70px 80px 70px;
+     border-radius: 40px;
+     border: 1px solid #D6DDED;
+     background-color: #F8FAFF;
+ }
+
+ .footer__info {
+     flex-basis: 360px;
+ }
+
+ .footer__navigation {
+     flex-grow: 1;
+ }
+
+ .footer__info>img {
+     width: 187px;
+     height: auto;
+     padding-bottom: 38px;
+ }
+
+ .footer__info>p {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 150%;
+     color: #8987A1;
+     padding-bottom: 60px;
+ }
+
+ .footer__info .footer__powered {
+     display: flex;
+     align-items: center;
+     gap: 14px;
+
+     img {
+         width: 18px;
+         height: 16px;
+     }
+
+     p {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 150%;
+         color: #8987A1;
+
+         a:hover {
+             color: green;
+         }
+     }
+ }
+
+ .footer__navigation {
+     display: flex;
+     align-items: flex-end;
+     flex-direction: column;
+     gap: 110px;
+ }
+
+ .footer__navigation .navigation ul {
+     display: flex;
+     align-items: center;
+     gap: 48px;
+
+     a {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 150%;
+         color: #8987A1;
+     }
+
+     li:hover {
+         text-shadow: #ffcc00 1px 0 10px;
+     }
+ }
+
+ .footer__socials ul {
+     display: flex;
+     align-items: center;
+     gap: 46px;
+
+     li {
+         line-height: 0;
+         width: 48px;
+         height: 48px;
+         border-radius: 50%;
+         background-color: #F5F8FF;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+
+         &:hover {
+             background-color: #eef0f4;
+         }
+
+     }
  }
