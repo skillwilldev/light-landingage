@@ -5,9 +5,8 @@ A multi-page responsive real estate website built with vanilla HTML, CSS, and Ja
 ---
 
 ## Live Demo
+https://skillwilldev.github.io/statein-real-estate/estate
 
-
----
 
 ## Preview
 
@@ -193,9 +192,8 @@ cd estatein
 
 **Melik Papikyan**  
 Frontend Developer  
-📧 melikpapikyan@gmail.com  
-🐙 [@meloodev](https://github.com/meloodev)
-
+🐙 https://github.com/skillwilldev/light-landingage
+https://www.figma.com/design/7ho6uFtpsjtWYNWbwO6H2e/Untitled?node-id=0-1&p=f&t=4az2iSroKJ87kaEt-0
 ---
 
 ## License
